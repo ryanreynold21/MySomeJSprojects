@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">;
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">>
+</head>
+<style>
+    .uploaded{
+        columns: 3 200px;
+        column-gap: 1.5rem;
+    }
+
+    #uploaderUI{
+        transition: 0.7s;
+    }
+
+    #uploaderUI:active{
+        transform: scale(1.5);
+        background-color: rgb(95, 86, 86) !important;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <div class="p-5 text-center rounded bg-light mt-5" id="uploaderUI">
+                        <i class=" bi bi-upload fs-3"></i>
+                    </div>
+                    <!-- <label for="" class="form-label">Form Upload</label> -->
+                    <input type="file" name="" class="form-control d-none" id="uploader" multiple>
+                </div>
+                <div class="uploaded g-5"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/gallary.js"></script>
+</body>
+</html>
